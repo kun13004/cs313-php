@@ -12,8 +12,19 @@ body {
 	margin-left: 150px;
 }
 
-div {
-	background-color: rgb(100, 100, 100);
-	padding: 25px;
-	margin: 100px;
+h2 {
+	border: 15px;
+
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: black;
 }
