@@ -35,10 +35,14 @@ h3 {
 
 li {
 	float: left;
+	margin-right: 150px;
+	margin-left: 150px;
 }
 
 li a {
 	display: block;
+	margin-right: 150px;
+	margin-left: 150px;
 	color: white;
 	text-align: center;
 	padding: 16px;
