@@ -1,12 +1,11 @@
 body {
-	background-image: url("http://411posters.com/wp-content/uploads/2013/10/The-Lord-of-the-Rings.png");
+	background-image: url("http://2.bp.blogspot.com/-gTF9tlvR4sk/Ul2M-F3HedI/AAAAAAAAa9g/Zol8Phr50tg/s1600/s.jpg");
 	background-repeat: no-repeat;
 	opacity: 0.9;
 }
 
 div {
-	width: 300px;
-	border: 25px solid green;
+	border: 25px solid rgb(50, 50, 50);
 	padding: 25px;
 	margin: 25px;
 }
