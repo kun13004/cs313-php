@@ -6,9 +6,14 @@ body {
 	opacity: 0.9;
 }
 
+.main {
+	background-color: rgb(100, 100, 100);
+	margin: 100px;
+}
+
 div {
 	border: 25px solid rgb(50, 50, 50);
 	background-color: rgb(100, 100, 100);
 	padding: 25px;
-	margin: 25px;
+	margin: 100px;
 }
