@@ -8,11 +8,11 @@ body {
 
 .main {
 	background-color: rgb(100, 100, 100);
-	margin: 100px;
+	margin-right: 150px;
+	margin-left: 150px;
 }
 
 div {
-	border: 25px solid rgb(50, 50, 50);
 	background-color: rgb(100, 100, 100);
 	padding: 25px;
 	margin: 100px;
