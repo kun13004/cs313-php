@@ -1,3 +1,12 @@
 body {
-	background-image: url("https://cf.geekdo-images.com/images/pic2081108_md.jpg");
+	background-image: url("http://411posters.com/wp-content/uploads/2013/10/The-Lord-of-the-Rings.png");
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+
+div {
+	width: 300px;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25px;
 }
