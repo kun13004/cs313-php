@@ -237,6 +237,13 @@ body, html {
 	border-radius:50%!important
 }
 
+.the-col.m1 {
+	width:8.33333%
+}
+
+.the-col.m2 {
+	width:16.66666%
+}
 
 .the-col.m3,.the-quarter {
 	width:24.99999%
