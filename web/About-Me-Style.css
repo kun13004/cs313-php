@@ -228,7 +228,7 @@ body, html {
 
 .the-container:after,.the-panel:after,.the-row:after,.the-row-padding:after,.the-topnav:after,.the-clear:after,.the-btn-group:before,.the-btn-group:after,.the-btn-bar:before,.the-btn-bar:after
 {
-	content:"";
+	content:" ";
 	display:table;
 	clear:both
 }
