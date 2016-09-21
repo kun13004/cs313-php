@@ -226,8 +226,17 @@ body, html {
 	margin:auto
 }
 
+.the-table {
+	display: table;
+}
+
 .the-row {
 	display: table-row;
+}
+
+.the-col,.the-half,.the-third,.the-twothird,.the-threequarter,.the-quarter {
+	float:left;
+	width:100%
 }
 
 .the-container:after,.the-panel:after,.the-row:after,.the-row-padding:after,.the-topnav:after,.the-clear:after,.the-btn-group:before,.the-btn-group:after,.the-btn-bar:before,.the-btn-bar:after
