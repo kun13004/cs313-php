@@ -372,6 +372,11 @@ body, html {
 .the-card-2,.the-example {
 	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
 }
+
+.the-imsize {
+	width: 50%;
+	height: 50%;
+}
 /*
 body {
 	background-image: url("http://2.bp.blogspot.com/-gTF9tlvR4sk/Ul2M-F3HedI/AAAAAAAAa9g/Zol8Phr50tg/s1600/s.jpg");
