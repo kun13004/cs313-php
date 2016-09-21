@@ -226,11 +226,15 @@ body, html {
 	margin:auto
 }
 
+.the-row {
+	display: table-row;
+}
+
 .the-container:after,.the-panel:after,.the-row:after,.the-row-padding:after,.the-topnav:after,.the-clear:after,.the-btn-group:before,.the-btn-group:after,.the-btn-bar:before,.the-btn-bar:after
 {
 	content:" ";
-	display:table;
-	clear:both
+	display: table;
+	clear: both;
 }
 
 .the-row-padding,.the-row-padding>.the-half,.the-row-padding>.the-third,.the-row-padding>.the-twothird,.the-row-padding>.the-threequarter,.the-row-padding>.the-quarter,.the-row-padding>.the-col {
