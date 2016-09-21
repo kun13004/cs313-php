@@ -190,6 +190,40 @@ body, html {
 	animation:opac 1.5s
 }
 
+.the-content {
+	max-width:980px;
+	margin:auto
+}
+
+.the-container:after,.the-panel:after,.the-row:after,.the-row-padding:after,.the-topnav:after,.the-clear:after,.the-btn-group:before,.the-btn-group:after,.the-btn-bar:before,.the-btn-bar:after
+{
+	content:"";
+	display:table;
+	clear:both
+}
+
+.the-container {
+	padding:0.01em 16px
+}
+
+.the-padding-64 {
+	padding-top:64px!important;
+	padding-bottom:64px!important
+}
+
+.the-col.m6,.the-half {
+	width:49.99999%
+}
+
+.the-section {
+	margin-top:16px!important;
+	margin-bottom:16px!important
+}
+
+.the-circle {
+	border-radius:50%!important
+}
+
 /*
 body {
 	background-image: url("http://2.bp.blogspot.com/-gTF9tlvR4sk/Ul2M-F3HedI/AAAAAAAAa9g/Zol8Phr50tg/s1600/s.jpg");
