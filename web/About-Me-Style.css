@@ -354,6 +354,19 @@ body, html {
 	background-color:transparent!important
 }
 
+
+.fa-search:before {
+	content:"\f002"
+}
+
+.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale
+}
 /*
 body {
 	background-image: url("http://2.bp.blogspot.com/-gTF9tlvR4sk/Ul2M-F3HedI/AAAAAAAAa9g/Zol8Phr50tg/s1600/s.jpg");
