@@ -95,6 +95,11 @@ body, html {
 	padding:8px 8px
 }
 
+.the-padding-48 {
+	padding-top:48px!important;
+	padding-bottom:48px!important
+}
+
 .the-padding-large {
 	padding:12px 24px!important
 }
@@ -124,11 +129,16 @@ body, html {
 	background-color:#000!important
 }
 
+.the-dark-grey,.the-hover-dark-grey:hover {
+	color:#fff!important;
+	background-color:#616161!important
+}
+
 .the-text-light-grey,.the-hover-text-light-grey:hover {
 	color:#f1f1f1!important
 }
 
-.the-text-white,.w3-hover-text-white:hover {
+.the-text-white,.the-hover-text-white:hover {
 	color:#fff!important
 }
 
