@@ -401,6 +401,11 @@ body, html {
 	height: 50%;
 }
 
+.the-imsize-2 {
+	width: 80%;
+	height: 80%;
+}
+
 .the-right {
 	float: right;
 }
