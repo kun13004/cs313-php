@@ -10,7 +10,7 @@
 		Places: <?php $place = $_POST["continent"];
 		$N = count($place);
 		for($i = 0; $i < $N; $i++) {
-			echo $_POST[$place[$i] + " "];
+			echo htmlspecialchars($place[$i] ). " ";
 			} ?><br>
 		Comments: <?php echo $_POST["comment"]; ?><br>
 	</body>
