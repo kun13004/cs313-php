@@ -1,12 +1,11 @@
-<?php 
-	header("Content-type: text/html \n\n");
-	$keys = array_keys($_POST);
-?>
 <html>
 	<head>
 		<title>Confirmation Page</title>
 </head>
 	<body >
-		<?php print($_POST["name"])?>
+		Name: <?php echo $_POST["name"]; ?><br>
+		Email: <?php echo $_POST["email"]; ?><br>
+		Major: <?php echo $_POST["major"]; ?><br>
+		Comments: <?php echo $_POST["comment"]; ?><br>
 	</body>
 </html>
