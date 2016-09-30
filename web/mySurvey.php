@@ -6,7 +6,7 @@
 		
 		Name: <?php echo $_POST["name"]; ?><br>
 
-
+		Lightsaber Color: 
 		<?php 
 			$importance = $_POST["importance"];
 			$personality = $_POST["personality"];
@@ -53,9 +53,9 @@
 			getResult($roleModel);
 			getResult($class);
 
-		?>
+			echo finalResult();
+		?><br><br>
 		
-		Lightsaber Color: <?php echo finalResult(); ?><br>
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
 		Lightsaber Color: <?php echo $_POST["roleModel"]; ?><br>
 		Lightsaber Color: <?php echo $_POST["class"]; ?><br>
