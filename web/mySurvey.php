@@ -14,26 +14,26 @@
 			$roleModel = $_POST["roleModel"];
 			$class = $_POST["class"];
 
-			$blue = 0;
-			$green = 0;
-			$orange = 0;
-			$purple = 0;
+			$blue = 0.4;
+			$green = 0.3;
+			$orange = 0.2;
+			$purple = 0.1;
 
 			function getResult($x) {
 				global $blue, $green, $orange, $purple;
 
 				switch ($x) {
 				case "Blue":
-					$blue = $blue + 1;
+					$blue = $blue + 1.0;
 					break;
 				case "Green":
-					$green = $green + 1;
+					$green = $green + 1.0;
 					break;
 				case "Orange":
-					$orange = $orange + 1;
+					$orange = $orange + 1.0;
 					break;
 				default:
-					$purple = $purple + 1;
+					$purple = $purple + 1.0;
 					break;
 				}
 			}
