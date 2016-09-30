@@ -48,19 +48,19 @@
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$final = "Blue";
-					echo $_SESSION["final"];
+					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
 					$final = "Green";
-					echo $_SESSION["final"];
+					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$final = "Orange";
-					echo $_SESSION["final"];
+					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else {
 					$final = "Purple";
-					echo $_SESSION["final"];
+					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 
 				fwrite($myFile, $final);
