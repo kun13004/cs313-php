@@ -42,7 +42,7 @@
 			
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
-				$myFile = fopen("mySurvey.txt", "a") or die("Unable to open file!");
+				$myFile = fopen("mySurvey.txt", "a+") or die("Unable to open file!");
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
