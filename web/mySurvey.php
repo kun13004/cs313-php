@@ -5,10 +5,6 @@
   </head>
   <body>
 
-    <?php 
-      $final = "Blue";
-      $name;
-    ?>
     <a href="myResults.php">Results page</a><br>
 
     <form method="post" action="myResults.php">
@@ -39,6 +35,11 @@
       <input type="radio" name="class" value="Green"> Jedi Consular<br><br>
       
       <input type="submit" value="Submit">
+
+      <?php 
+      $final = "Blue";
+      $name;
+      ?>
 
     </form>
   </body>
