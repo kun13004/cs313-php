@@ -61,7 +61,8 @@
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 
-				fwrite($myFile, $final);
+				fwrite($myFile, $_SESSION["myName"]);
+				fwrite($myFile, $_SESSION["final"]);
 
 				echo fread($myFile, filesize("mySurvey.txt"));
 				fclose($myFile);
