@@ -48,11 +48,11 @@
 				}
 				else
 					echo "Purple";
-			}
+			}*/
 
 			getResult();
 
-			finalResult();*/
+			//finalResult();
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
