@@ -17,7 +17,7 @@
 			$orange = 0.2;
 			$purple = 0.1;
 
-			function getResult($x) {
+			function getResult(&$x) {
 				switch ($x) {
 				case "Blue":
 					$GLOBALS['blue'] = $GLOBALS['blue'] + 1.0;
