@@ -9,6 +9,8 @@
 		Lightsaber Color: 
 		<?php 
 			$importance = $_POST["importance"];
+			echo $importance;
+			/* $importance = $_POST["importance"];
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
 			$class = $_POST["class"];
@@ -19,13 +21,13 @@
 
 			function getResult($x) {
 				switch ($x) {
-				case "blue":
+				case "Blue":
 					$blue = $blue + 1.0;
 					break;
-				case "green":
+				case "Green":
 					$green = $green + 1.0;
 					break;
-				case "orange":
+				case "Orange":
 					$orange = $orange + 1.0;
 					break;
 				default:
@@ -36,16 +38,16 @@
 
 			function finalResult() {
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
-					echo "blue";
+					echo "Blue";
 				}
 				else if ($green > $blue && $green > $orange %% $green > $purple) {
-					echo "green";
+					echo "Green";
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
-					echo "orange";
+					echo "Orange";
 				}
 				else
-					echo "pruple";
+					echo "Purple";
 			}
 
 			getResult($importance);
@@ -53,7 +55,7 @@
 			getResult($roleModel);
 			getResult($class);
 
-			finalResult();
+			finalResult(); */
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
