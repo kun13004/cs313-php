@@ -33,7 +33,7 @@
 					break;
 				}
 			}
-			/*
+			
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
 
@@ -48,7 +48,7 @@
 				}
 				else
 					echo "Purple";
-			}*/
+			}
 
 			getResult();
 
