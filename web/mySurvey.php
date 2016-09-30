@@ -16,9 +16,9 @@
 
 			function getResult() {
 				global $blue, $green, $orange, $purple;
-				$color = "Green";
+				$importance = $_POST["importance"];
 
-				switch ($color) {
+				switch ($importance) {
 				case "Blue":
 					$blue = $blue + 1;
 					break;
