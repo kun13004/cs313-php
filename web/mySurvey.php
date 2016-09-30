@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,6 +16,7 @@
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
 			$class = $_POST["class"];
+			$final;
 
 			$blue = 0.4;
 			$green = 0.3;
@@ -42,16 +46,21 @@
 				global $blue, $green, $orange, $purple;
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
-					echo "Blue";
+					$final = "Blue";
+					echo $_SESSION["final"];
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
-					echo "Green";
+					$final = "Green";
+					echo $_SESSION["final"];
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
-					echo "Orange";
+					$final = "Orange";
+					echo $_SESSION["final"];
 				}
-				else
-					echo "Purple";
+				else {
+					$final = "Purple";
+					echo $_SESSION["final"];
+				}
 			}
 
 			getResult($importance);
