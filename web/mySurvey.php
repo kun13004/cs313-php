@@ -37,7 +37,7 @@
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
 
-				if ($blue > $green /*&& $blue > $orange && $blue > $purple*/) {
+				if ($blue > $green && $blue > $orange /*&& $blue > $purple*/) {
 					echo "Blue";
 				}
 				else if ($green > $blue /*&& $green > $orange %% $green > $purple*/) {
