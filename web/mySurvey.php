@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Confirmation Page</title>
@@ -8,16 +9,15 @@
 
 		Lightsaber Color: 
 		<?php 
-		
 			$blue = 0;
 			$green = 0;
 			$orange = 0;
 			$purple = 0;
 
 			function getResult() {
-				
 				global $blue, $green, $orange, $purple;
 				$color = "Green";
+
 				switch ($color) {
 				case "Blue":
 					$blue = $blue + 1;
