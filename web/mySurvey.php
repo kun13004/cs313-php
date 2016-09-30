@@ -18,8 +18,8 @@
 			$purple = 0.1;
 
 			function getResult() {
-				$importance = $_POST["importance"];
-				switch ($importance) {
+				//$importance = $_POST["importance"];
+				switch ("Green") {
 				case "Blue":
 					$GLOBALS['blue'] = $GLOBALS['blue'] + 1.0;
 					break;
