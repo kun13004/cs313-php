@@ -19,13 +19,13 @@
 
 			function getResult($x) {
 				switch ($x) {
-				case 'blue':
+				case "blue":
 					$blue = $blue + 1;
 					break;
-				case 'green':
+				case "green":
 					$green = $green + 1;
 					break;
-				case 'orange':
+				case "orange":
 					$orange = $orange + 1;
 					break;
 				default:
