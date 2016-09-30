@@ -12,25 +12,25 @@
 			//$personality = $_POST["personality"];
 			//$roleModel = $_POST["roleModel"];
 			//$class = $_POST["class"];
-			$blue = 0.4;
-			$green = 0.3;
-			$orange = 0.2;
-			$purple = 0.1;
+			$blue = 0;
+			$green = 0;
+			$orange = 0;
+			$purple = 0;
 
 			function getResult() {
 				//$importance = $_POST["importance"];
 				switch ("Green") {
 				case "Blue":
-					$GLOBALS['blue'] = $GLOBALS['blue'] + 1.0;
+					$GLOBALS['blue'] = $GLOBALS['blue'] + 1;
 					break;
 				case "Green":
-					$GLOBALS['green'] = $GLOBALS['green'] + 1.0;
+					$GLOBALS['green'] = $GLOBALS['green'] + 1;
 					break;
 				case "Orange":
-					$GLOBALS['orange'] = $GLOBALS['orange'] + 1.0;
+					$GLOBALS['orange'] = $GLOBALS['orange'] + 1;
 					break;
 				default:
-					$GLOBALS['purple'] = $GLOBALS['purple'] + 1.0;
+					$GLOBALS['purple'] = $GLOBALS['purple'] + 1;
 					break;
 				}
 			}
