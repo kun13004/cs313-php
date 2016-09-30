@@ -9,16 +9,17 @@
 
 		Lightsaber Color: 
 		<?php 
+			$importance = $_POST["importance"];
+
 			$blue = 0;
 			$green = 0;
 			$orange = 0;
 			$purple = 0;
 
-			function getResult() {
+			function getResult($x) {
 				global $blue, $green, $orange, $purple;
-				$importance = $_POST["importance"];
 
-				switch ($importance) {
+				switch ($x) {
 				case "Blue":
 					$blue = $blue + 1;
 					break;
@@ -50,7 +51,7 @@
 					echo "Purple";
 			}
 
-			getResult();
+			getResult($importance);
 
 			finalResult();
 		?><br><br>
