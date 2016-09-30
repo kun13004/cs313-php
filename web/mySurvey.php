@@ -44,6 +44,7 @@
 			
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
+				$myFile = fopen("mySurvey.txt", "a") or die("Unable to open file!");
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$final = "Blue";
@@ -61,6 +62,9 @@
 					$final = "Purple";
 					echo $_SESSION["final"];
 				}
+
+				fwrite($myFile, $final);
+				fclose($myFile);
 			}
 
 			getResult($importance);
