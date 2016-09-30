@@ -8,10 +8,10 @@
 
 		Lightsaber Color: 
 		<?php 
-			$importance = $_POST["importance"];
-			$personality = $_POST["personality"];
-			$roleModel = $_POST["roleModel"];
-			$class = $_POST["class"];
+			//$importance = $_POST["importance"];
+			//$personality = $_POST["personality"];
+			//$roleModel = $_POST["roleModel"];
+			//$class = $_POST["class"];
 			$blue = 0.4;
 			$green = 0.3;
 			$orange = 0.2;
