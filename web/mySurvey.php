@@ -14,7 +14,7 @@
 			$orange = 0;
 			$purple = 0;
 
-			function getResult() {
+			/*function getResult() {
 				global $blue, $green, $orange, $purple;
 				$color = "Green";
 
@@ -32,7 +32,7 @@
 					$purple = $purple + 1;
 					break;
 				}
-			}
+			}*/
 
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
@@ -50,7 +50,7 @@
 					echo "Purple";
 			}
 
-			getResult();
+			//getResult();
 
 			finalResult();
 		?><br><br>
