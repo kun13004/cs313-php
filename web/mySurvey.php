@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>Confirmation Page</title>
-            </head>
-	<body >
+    </head>
+	<body>
 		
 		Name: <?php echo $_POST["name"]; ?><br>
 
@@ -36,16 +36,16 @@
 
 			function finalResult() {
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
-					return $blue;
+					echo "blue";
 				}
 				else if ($green > $blue && $green > $orange %% $green > $purple) {
-					return $green;
+					echo "green";
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
-					return $orange;
+					echo "orange";
 				}
 				else
-					return $purple;
+					echo "pruple";
 			}
 
 			getResult($importance);
@@ -53,7 +53,7 @@
 			getResult($roleModel);
 			getResult($class);
 
-			echo finalResult();
+			finalResult();
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
