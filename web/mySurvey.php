@@ -37,13 +37,13 @@
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
 
-				if ($blue > $green && $blue > $orange && $blue > $purple) {
+				if ($blue > $green /*&& $blue > $orange && $blue > $purple*/) {
 					echo "Blue";
 				}
-				else if ($green > $blue && $green > $orange %% $green > $purple) {
+				else if ($green > $blue /*&& $green > $orange %% $green > $purple*/) {
 					echo "Green";
 				}
-				else if ($orange > $blue && $orange > $green && $orange > $purple) {
+				else if ($orange > $blue /*&& $orange > $green && $orange > $purple*/) {
 					echo "Orange";
 				}
 				else
@@ -52,7 +52,7 @@
 
 			getResult();
 
-			//finalResult();
+			finalResult();
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
