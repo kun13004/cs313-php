@@ -1,75 +1,45 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+?>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Confirmation Page</title>
-    </head>
-	<body>
-		
-		Name: <?php echo $_POST["name"]; ?><br>
+  <head>
+  <title>Survey page</title>
+  </head>
+  <body>
 
-		Lightsaber Color: 
-		<?php 
-			$importance = $_POST["importance"];
-			$personality = $_POST["personality"];
-			$roleModel = $_POST["roleModel"];
-			$class = $_POST["class"];
-			$final;
+    <a href="mySurvey.php">Results page</a><br>
 
-			$blue = 0.4;
-			$green = 0.3;
-			$orange = 0.2;
-			$purple = 0.1;
+    <form method="post" action="myResults.php">
+      Name:<input type="text" id=”name” name="name"><br><br>
 
-			function getResult($x) {
-				global $blue, $green, $orange, $purple;
+      When it comes to being a jedi<br>
+      <input type="radio" name="importance" value="Green" checked>Strength in the force is most important<br>
+      <input type="radio" name="importance" value="Blue"> Skill with a lightsaber is most important<br>
+      <input type="radio" name="importance" value="Purple"> Overpowering your opponent is most important<br>
+      <input type="radio" name="importance" value="Orange"> Negotiation skills is most important<br><br>
 
-				switch ($x) {
-				case "Blue":
-					$blue = $blue + 1.0;
-					break;
-				case "Green":
-					$green = $green + 1.0;
-					break;
-				case "Orange":
-					$orange = $orange + 1.0;
-					break;
-				default:
-					$purple = $purple + 1.0;
-					break;
-				}
-			}
-			
-			function finalResult() {
-				global $blue, $green, $orange, $purple;
-				$myFile = fopen("mySurvey.txt", "a") or die("Unable to open file!");
+      If you are confronted by a sith you<br>
+      <input type="radio" name="personality" value="Orange" checked> Would reason with them<br>
+      <input type="radio" name="personality" value="Purple"> Exert all your effort and ability to defeat them, even if it means getting a bit dark<br>
+      <input type="radio" name="personality" value="Green"> Use the force to battle, turning to your lightsaber only if needed<br>
+      <input type="radio" name="personality" value="Blue"> Battle them with your lightsaber<br><br>
 
-				if ($blue > $green && $blue > $orange && $blue > $purple) {
-					$final = "Blue";
-					echo $_SESSION["final"];
-				}
-				else if ($green > $blue && $green > $orange && $green > $purple) {
-					$final = "Green";
-					echo $_SESSION["final"];
-				}
-				else if ($orange > $blue && $orange > $green && $orange > $purple) {
-					$final = "Orange";
-					echo $_SESSION["final"];
-				}
-				else {
-					$final = "Purple";
-					echo $_SESSION["final"];
-				}
+      Who would you rather spend a day with<br>
+      <input type="radio" name="roleModel" value="Purple" checked> Mace Windu<br>
+      <input type="radio" name="roleModel" value="Green"> Luke Skywalker<br>
+      <input type="radio" name="roleModel" value="Orange"> Plo Koon<br>
+      <input type="radio" name="roleModel" value="Blue"> Obi Wan Kenobi<br><br>
 
-				fwrite($myFile, $final);
-				fclose($myFile);
-			}
+      If you were a jedi you would be a<br>
+      <input type="radio" name="class" value="Blue" checked> Jedi Guardian<br>
+      <input type="radio" name="class" value="Orange"> Jedi Sentinal<br>
+      <input type="radio" name="class" value="Purple"> Jedi, I don't need to belong to a class of jedi<br>
+      <input type="radio" name="class" value="Green"> Jedi Consular<br><br>
+      
+      <input type="submit" value="Submit">
 
-			getResult($importance);
-			getResult($personality);
-			getResult($roleModel);
-			getResult($class);
-
-			finalResult();
-		?>
-	</body>
+    </form>
+  </body>
 </html>
