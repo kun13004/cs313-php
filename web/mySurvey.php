@@ -5,6 +5,10 @@
   </head>
   <body>
 
+    <?php 
+      $final = "Blue";
+      $name;
+    ?>
     <a href="myResults.php">Results page</a><br>
 
     <form method="post" action="myResults.php">

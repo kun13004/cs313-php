@@ -9,14 +9,12 @@
 	<body>
 		
 		Name: <?php echo $_POST["name"]; ?><br>
-
-		Lightsaber Color: 
+ 
 		<?php 
 			$importance = $_POST["importance"];
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
 			$class = $_POST["class"];
-			$final;
 
 			$blue = 0.4;
 			$green = 0.3;
