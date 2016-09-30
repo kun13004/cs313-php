@@ -45,19 +45,19 @@
 				$myFile = fopen("mySurvey.txt", "a") or die("Unable to open file!");
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
-					$final = "Blue";
+					$_SESSION["final"] = "Blue";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
-					$final = "Green";
+					$_SESSION["final"] = "Green";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
-					$final = "Orange";
+					$_SESSION["final"] = "Orange";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else {
-					$final = "Purple";
+					$_SESSION["final"] = "Purple";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 
