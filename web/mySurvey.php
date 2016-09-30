@@ -12,7 +12,7 @@
 			//$personality = $_POST["personality"];
 			//$roleModel = $_POST["roleModel"];
 			//$class = $_POST["class"];
-		/*
+		
 			$blue = 0;
 			$green = 0;
 			$orange = 0;
@@ -21,8 +21,8 @@
 			function getResult() {
 				//$importance = $_POST["importance"];
 				global $blue, $green, $orange, $purple;
-
-				switch ("Green") {
+				$color = "Green";
+				switch ($color) {
 				case "Blue":
 					$blue = $blue + 1;
 					break;
@@ -59,7 +59,7 @@
 			//getResult($roleModel);
 			//getResult($class);
 
-			finalResult(); */
+			finalResult();
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
