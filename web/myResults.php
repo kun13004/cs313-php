@@ -1,14 +1,16 @@
-
+<?php 
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Confirmation Page</title>
     </head>
 	<body>
-		
-		Name: <?php echo $_POST["name"]; ?><br>
  
 		<?php 
+
+			$_SESSION["myName"] = $_POST["name"];
 			$importance = $_POST["importance"];
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
@@ -44,19 +46,19 @@
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$final = "Blue";
-					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
 					$final = "Green";
-					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$final = "Orange";
-					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 				else {
 					$final = "Purple";
-					echo "Your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 				}
 
 				fwrite($myFile, $final);

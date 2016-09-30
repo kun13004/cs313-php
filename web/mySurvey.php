@@ -40,8 +40,8 @@
       <input type="submit" value="Submit">
 
       <?php 
-      $final = "Blue";
-      $name;
+      $_SESSION["final"] = "Blue";
+      $_SESSION["myName"] = "NOTHING";
       ?>
 
     </form>
