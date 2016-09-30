@@ -40,10 +40,10 @@
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					echo "Blue";
 				}
-				else if ($green > $blue /*&& $green > $orange %% $green > $purple*/) {
+				else if ($green > $blue && $green > $orange && $green > $purple) {
 					echo "Green";
 				}
-				else if ($orange > $blue /*&& $orange > $green && $orange > $purple*/) {
+				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					echo "Orange";
 				}
 				else
