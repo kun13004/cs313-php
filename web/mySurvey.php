@@ -9,6 +9,8 @@
 		Lightsaber Color: 
 		<?php 
 			$importance = $_POST["importance"];
+			$green = "Green";
+			var_dump($green);
 			var_dump($importance);
 			/* $importance = $_POST["importance"];
 			$personality = $_POST["personality"];
