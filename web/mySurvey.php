@@ -17,8 +17,9 @@
 			$orange = 0.2;
 			$purple = 0.1;
 
-			function getResult(&$x) {
-				switch ($x) {
+			function getResult() {
+				$importance = $_POST["importance"];
+				switch ($importance) {
 				case "Blue":
 					$GLOBALS['blue'] = $GLOBALS['blue'] + 1.0;
 					break;
@@ -48,10 +49,10 @@
 					echo "Purple";
 			}
 
-			getResult($importance);
-			getResult($personality);
-			getResult($roleModel);
-			getResult($class);
+			getResult();
+			//getResult($personality);
+			//getResult($roleModel);
+			//getResult($class);
 
 			finalResult();
 		?><br><br>
