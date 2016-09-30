@@ -60,10 +60,6 @@
 			getResult($class);
 
 			finalResult();
-		?><br><br>
-		
-		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
-		Lightsaber Color: <?php echo $_POST["roleModel"]; ?><br>
-		Lightsaber Color: <?php echo $_POST["class"]; ?><br>
+		?>
 	</body>
 </html>
