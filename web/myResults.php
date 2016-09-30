@@ -62,6 +62,8 @@
 				}
 
 				fwrite($myFile, $final);
+
+				echo fread($myFile, filesize("mySurvey.txt"));
 				fclose($myFile);
 			}
 
