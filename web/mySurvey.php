@@ -32,7 +32,7 @@
 					$purple = $purple + 1;
 					break;
 				}
-			}*/
+			}
 
 			function finalResult() {
 				global $blue, $green, $orange, $purple;
@@ -50,9 +50,9 @@
 					echo "Purple";
 			}
 
-			//getResult();
+			getResult();
 
-			finalResult();
+			finalResult();*/
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
