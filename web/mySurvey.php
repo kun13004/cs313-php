@@ -9,7 +9,7 @@
 		Lightsaber Color: 
 		<?php 
 			$importance = $_POST["importance"];
-			echo $importance;
+			var_dump($importance);
 			/* $importance = $_POST["importance"];
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
