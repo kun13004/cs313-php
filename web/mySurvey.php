@@ -1,7 +1,11 @@
 <?php
-  header("Location: myResults.php");
-  exit;
-  session_start();
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+  else {
+    header("Location: myResults.php");
+    exit;
+  }
 ?>
 <!DOCTYPE html>
 <html>
