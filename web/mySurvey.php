@@ -1,4 +1,6 @@
 <?php
+  header("Location: myResults.php");
+  exit;
   session_start();
 ?>
 <!DOCTYPE html>
