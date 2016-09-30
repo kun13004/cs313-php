@@ -9,10 +9,6 @@
 		Lightsaber Color: 
 		<?php 
 			$importance = $_POST["importance"];
-			$green = "Green";
-			var_dump($green);
-			var_dump($importance);
-			/* $importance = $_POST["importance"];
 			$personality = $_POST["personality"];
 			$roleModel = $_POST["roleModel"];
 			$class = $_POST["class"];
@@ -24,28 +20,28 @@
 			function getResult($x) {
 				switch ($x) {
 				case "Blue":
-					$blue = $blue + 1.0;
+					$GLOBALS['blue'] = $GLOBALS['blue'] + 1.0;
 					break;
 				case "Green":
-					$green = $green + 1.0;
+					$GLOBALS['green'] = $GLOBALS['green'] + 1.0;
 					break;
 				case "Orange":
-					$orange = $orange + 1.0;
+					$GLOBALS['orange'] = $GLOBALS['orange'] + 1.0;
 					break;
 				default:
-					$purple = $purple + 1.0;
+					$GLOBALS['purple'] = $GLOBALS['purple'] + 1.0;
 					break;
 				}
 			}
 
 			function finalResult() {
-				if ($blue > $green && $blue > $orange && $blue > $purple) {
+				if ($GLOBALS['blue'] > $GLOBALS['green'] && $GLOBALS['blue'] > $GLOBALS['orange'] && $GLOBALS['blue'] > $GLOBALS['purple']) {
 					echo "Blue";
 				}
-				else if ($green > $blue && $green > $orange %% $green > $purple) {
+				else if ($GLOBALS['green'] > $GLOBALS['blue'] && $GLOBALS['green'] > $GLOBALS['orange'] %% $GLOBALS['green'] > $GLOBALS['purple']) {
 					echo "Green";
 				}
-				else if ($orange > $blue && $orange > $green && $orange > $purple) {
+				else if ($GLOBALS['orange'] > $GLOBALS['blue'] && $GLOBALS['orange'] > $GLOBALS['green'] && $GLOBALS['orange'] > $GLOBALS['purple']) {
 					echo "Orange";
 				}
 				else
@@ -57,7 +53,7 @@
 			getResult($roleModel);
 			getResult($class);
 
-			finalResult(); */
+			finalResult();
 		?><br><br>
 		
 		Lightsaber Color: <?php echo $_POST["personality"]; ?><br>
