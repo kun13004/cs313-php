@@ -19,30 +19,34 @@
 
 			function getResult() {
 				//$importance = $_POST["importance"];
+				global $blue, $green, $orange, $purple;
+				
 				switch ("Green") {
 				case "Blue":
-					$GLOBALS['blue'] = $GLOBALS['blue'] + 1;
+					$blue = $blue + 1;
 					break;
 				case "Green":
-					$GLOBALS['green'] = $GLOBALS['green'] + 1;
+					$green = $green + 1;
 					break;
 				case "Orange":
-					$GLOBALS['orange'] = $GLOBALS['orange'] + 1;
+					$orange = $orange + 1;
 					break;
 				default:
-					$GLOBALS['purple'] = $GLOBALS['purple'] + 1;
+					$purple = $purple + 1;
 					break;
 				}
 			}
 
 			function finalResult() {
-				if ($GLOBALS['blue'] > $GLOBALS['green'] && $GLOBALS['blue'] > $GLOBALS['orange'] && $GLOBALS['blue'] > $GLOBALS['purple']) {
+				global $blue, $green, $orange, $purple;
+
+				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					echo "Blue";
 				}
-				else if ($GLOBALS['green'] > $GLOBALS['blue'] && $GLOBALS['green'] > $GLOBALS['orange'] %% $GLOBALS['green'] > $GLOBALS['purple']) {
+				else if ($green > $blue && $green > $orange %% $green > $purple) {
 					echo "Green";
 				}
-				else if ($GLOBALS['orange'] > $GLOBALS['blue'] && $GLOBALS['orange'] > $GLOBALS['green'] && $GLOBALS['orange'] > $GLOBALS['purple']) {
+				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					echo "Orange";
 				}
 				else
