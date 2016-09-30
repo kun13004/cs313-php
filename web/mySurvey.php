@@ -1,8 +1,10 @@
 <?php
   if (session_id() == '') {
+    echo "Does not yet exist";
     session_start();
   }
   else {
+    echo "Already exists";
     header("Location: myResults.php");
     exit;
   }
