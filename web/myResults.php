@@ -64,7 +64,7 @@
 				fwrite($myFile, $_SESSION["myName"]);
 				fwrite($myFile, $_SESSION["final"]);
 
-				echo fread($myFile, filesize("mySurvey.txt"));
+				echo fgets($myFile);
 				fclose($myFile);
 			}
 
