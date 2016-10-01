@@ -1,6 +1,7 @@
 body {
 	background-image: url("https://i.ytimg.com/vi/_kaqhy2iV7c/maxresdefault.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 
@@ -19,5 +20,5 @@ div {
 }
 
 .column {
-	margin-left: 500px;
+	margin-left: 400px;
 }
