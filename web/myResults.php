@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="Blue.css">
 		<script src="Survey.js"></script>
     </head>
-	<body onhashchange="getCSS()">
+	<body onload="getCSS()">
  
 		<?php 
 
