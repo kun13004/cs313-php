@@ -43,6 +43,9 @@
 			}
 			
 			function finalResult() {
+				if ($blue < 1.0 && $green < 1.0 && $orange < 1.0 && $purple < 1.0) {
+					return;
+				}
 				global $blue, $green, $orange, $purple;
 				$myFile = fopen("mySurvey.txt", "a+") or die("Unable to open file!");
 
