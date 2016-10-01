@@ -67,7 +67,7 @@
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 					$sSheet = 4;
 				}
-				json_encode($sSheet);
+				json_encode(2;
 
 				fwrite($myFile, $_SESSION["myName"]);
 				fwrite($myFile, $_SESSION["final"]);
