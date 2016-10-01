@@ -3,9 +3,9 @@ function reqListener () {
     }
 
     var oReq = new XMLHttpRequest();
-    oReq.onload = function() {
+    oReq.onreadystatechange = function() {
         changeCSS(this.responseText);
-        console.log(this.readyState());
+        console.log(this.responseText);
     };
     oReq.open("get", "myResults.php", true);
     oReq.send();
