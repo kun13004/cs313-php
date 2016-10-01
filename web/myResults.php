@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="Blue.css">
 		<script src="Survey.js"></script>
     </head>
-	<body onload="changeCSS('2')">
+	<body>
 		<?php 
 
 			$_SESSION["myName"] = $_POST["name"];
@@ -82,5 +82,7 @@
 
 			finalResult();
 		?>
+
+		<img src="http://i.imgur.com/6FfakhG.png" alt="lightsaber" onload="getCSS()">
 	</body>
 </html>
