@@ -5,6 +5,8 @@
 <html>
 	<head>
 		<title>Confirmation Page</title>
+		<link rel="stylesheet" type="text/css" href="Blue.css">
+		<script src="Survey.js"></script>
     </head>
 	<body>
  
@@ -20,6 +22,7 @@
 			$green = 0.3;
 			$orange = 0.2;
 			$purple = 0.1;
+			$sSheet = 0;
 
 			function getResult($x) {
 				global $blue, $green, $orange, $purple;
@@ -47,19 +50,24 @@
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					$sSheet = 1;
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
 					$_SESSION["final"] = "Green";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					$sSheet = 2;
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$_SESSION["final"] = "Orange";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					$sSheet = 3;
 				}
 				else {
 					$_SESSION["final"] = "Purple";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					$sSheet = 4;
 				}
+				echo json_encode($sSheet);
 
 				fwrite($myFile, $_SESSION["myName"]);
 				fwrite($myFile, $_SESSION["final"]);
