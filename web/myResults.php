@@ -35,8 +35,9 @@
 				case "Orange":
 					$orange = $orange + 1.0;
 					break;
-				default:
+				case "Purple":
 					$purple = $purple + 1.0;
+				default:
 					break;
 				}
 			}
@@ -70,7 +71,6 @@
 					echo '<img src="http://i.imgur.com/VNs2L1Y.png" alt="purple lightsaber" />';
 					$sSheet = 4;
 				}
-				echo json_encode($sSheet);
 
 				fwrite($myFile, $_SESSION["myName"]);
 				fwrite($myFile, $_SESSION["final"]);
