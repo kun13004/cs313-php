@@ -16,9 +16,13 @@
   <link rel="stylesheet" type="text/css" href="Survey.css">
   </head>
   <body>
-
+  <div>
+    <h1>What color of lightsaber do you have?</h1>
+  </div>
+  <div>
     <a href="myResults.php">Results page</a><br>
-
+  </div>
+  <div>
     <form method="post" action="myResults.php">
       Name:<input type="text" id=”name” name="name"><br><br>
 
@@ -54,5 +58,6 @@
       ?>
 
     </form>
+  </div>
   </body>
 </html>

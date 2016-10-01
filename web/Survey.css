@@ -4,11 +4,16 @@ body {
 
 
 
-h2 {
+h1 {
 	text-align: center;
 	color: white;
 }
 
 form {
 	color: white;
+	text-align: center;
+}
+
+div {
+	padding: 50px;
 }
