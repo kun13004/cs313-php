@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="Survey.css">
     </head>
 	<body>
-		<div>
 		<?php 
 
 			$_SESSION["myName"] = $_POST["name"];
@@ -87,6 +86,5 @@
 
 			finalResult();
 		?>
-		</div>
 	</body>
 </html>

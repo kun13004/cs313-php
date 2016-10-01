@@ -13,6 +13,7 @@
 <html>
   <head>
   <title>Survey page</title>
+  <link rel="stylesheet" type="text/css" href="Survey.css">
   </head>
   <body>
 

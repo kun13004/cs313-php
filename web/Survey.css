@@ -2,15 +2,13 @@ body {
 	background-image: url("https://i.ytimg.com/vi/_kaqhy2iV7c/maxresdefault.jpg");
 }
 
-div {
-	background-color: white;
-	opacity: 0.9;
-	padding: 100px;
-	margin-left: 100px;
-	margin-right: 100px;
-}
+
 
 h2 {
-	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+form {
 	color: white;
 }
