@@ -56,16 +56,19 @@
 				else if ($green > $blue && $green > $orange && $green > $purple) {
 					$_SESSION["final"] = "Green";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo '<img src="http://i.imgur.com/xTHn4aL.png" alt="green lightsaber" />';
 					$sSheet = 2;
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$_SESSION["final"] = "Orange";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo '<img src="https://i.imgur.com/dd3kj.png" alt="orange lightsaber" />';
 					$sSheet = 3;
 				}
 				else {
 					$_SESSION["final"] = "Purple";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo '<img src="http://i.imgur.com/VNs2L1Y.png" alt="purple lightsaber" />';
 					$sSheet = 4;
 				}
 				echo json_encode($sSheet);
