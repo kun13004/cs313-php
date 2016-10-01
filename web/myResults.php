@@ -49,6 +49,8 @@
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo '<img src="http://i.imgur.com/6FfakhG.png" alt="blue lightsaber" />';
+
 					$sSheet = 1;
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
@@ -83,6 +85,5 @@
 			finalResult();
 		?>
 
-		<img src="http://i.imgur.com/6FfakhG.png" alt="lightsaber" onload="getCSS()">
 	</body>
 </html>
