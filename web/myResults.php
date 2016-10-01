@@ -83,6 +83,6 @@
 			finalResult();
 		?>
 
-		<img src="http://i.imgur.com/6FfakhG.png" alt="lightsaber" onload="changeCSS('2')">
+		<img src="http://i.imgur.com/6FfakhG.png" alt="lightsaber" onload="getCSS()">
 	</body>
 </html>

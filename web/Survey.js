@@ -4,7 +4,7 @@ function reqListener () {
 
  function getCSS() {
     var oReq = new XMLHttpRequest();
-    oReq.onreadystatechange = function() {
+    oReq.onload = function() {
         changeCSS(this.responseText);
         console.log(this.responseText);
     };
