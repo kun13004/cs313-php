@@ -22,7 +22,7 @@
 			$green = 0.3;
 			$orange = 0.2;
 			$purple = 0.1;
-			$sSheet = 0;
+			$sSheet = 1;
 
 			function getResult($x) {
 				global $blue, $green, $orange, $purple;
@@ -67,7 +67,7 @@
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
 					$sSheet = 4;
 				}
-				echo json_encode($sSheet);
+				json_encode($sSheet);
 
 				fwrite($myFile, $_SESSION["myName"]);
 				fwrite($myFile, $_SESSION["final"]);
