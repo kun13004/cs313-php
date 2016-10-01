@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="Blue.css">
 		<script src="Survey.js"></script>
     </head>
-	<body onscroll="getCSS()">
+	<body onresize="getCSS()">
  
 		<?php 
 
