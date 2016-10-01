@@ -2,6 +2,7 @@ function reqListener () {
       console.log(this.responseText);
     }
 
+ function getCSS() {
     var oReq = new XMLHttpRequest();
     oReq.onreadystatechange = function() {
         changeCSS(this.responseText);
@@ -9,7 +10,7 @@ function reqListener () {
     };
     oReq.open("get", "myResults.php", true);
     oReq.send();
-
+}
 
 
 
