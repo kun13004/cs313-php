@@ -62,7 +62,7 @@
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$_SESSION["final"] = "Orange";
 					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
-					echo '<img src="https://i.imgur.com/dd3kj.png" alt="orange lightsaber" />';
+					echo '<img src="http://img12.deviantart.net/58e5/i/2015/075/c/6/beam_effect_dark_orange_by_kanbeikurodasamurai7-d8lx2g2.png" alt="orange lightsaber" />';
 					$sSheet = 3;
 				}
 				else {
