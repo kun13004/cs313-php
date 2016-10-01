@@ -5,8 +5,7 @@
 <html>
 	<head>
 		<title>Confirmation Page</title>
-		<link rel="stylesheet" type="text/css" href="Blue.css">
-		<script src="Survey.js"></script>
+		<link rel="stylesheet" type="text/css" href="Survey.css">
     </head>
 	<body>
 		<?php 
@@ -48,26 +47,26 @@
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
-					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo "<h2>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h2><br>";
 					echo '<img src="http://i.imgur.com/6FfakhG.png" alt="blue lightsaber" />';
 
 					$sSheet = 1;
 				}
 				else if ($green > $blue && $green > $orange && $green > $purple) {
 					$_SESSION["final"] = "Green";
-					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo "<h2>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h2><br>";
 					echo '<img src="http://i.imgur.com/xTHn4aL.png" alt="green lightsaber" />';
 					$sSheet = 2;
 				}
 				else if ($orange > $blue && $orange > $green && $orange > $purple) {
 					$_SESSION["final"] = "Orange";
-					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo "<h2>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h2><br>";
 					echo '<img src="http://img12.deviantart.net/58e5/i/2015/075/c/6/beam_effect_dark_orange_by_kanbeikurodasamurai7-d8lx2g2.png" alt="orange lightsaber" />';
 					$sSheet = 3;
 				}
 				else {
 					$_SESSION["final"] = "Purple";
-					echo $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "<br>";
+					echo "<h2>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h2><br>";
 					echo '<img src="http://i.imgur.com/VNs2L1Y.png" alt="purple lightsaber" />';
 					$sSheet = 4;
 				}
