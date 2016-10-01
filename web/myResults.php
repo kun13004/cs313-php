@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="Blue.css">
 		<script src="Survey.js"></script>
     </head>
-	<body onload="changeCSS('3')">
+	<body onload="changeCSS('1')">
 		<?php 
 
 			$_SESSION["myName"] = $_POST["name"];
