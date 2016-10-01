@@ -18,6 +18,7 @@ function reqListener () {
 function changeCSS(cssFile) {
 	var oldlink = document.getElementsByTagName("link").item(0);
 	var nwSheet;
+	document.write(cssFile);
 	if (cssFile == 1)
 		nwSheet = "Blue.css";
 	else if (cssFile == 2)
