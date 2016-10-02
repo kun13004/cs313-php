@@ -49,6 +49,7 @@
       <input type="submit" value="Submit">
 
       <?php 
+      $_SESSION["surveyComplete"] = true;
       $_SESSION["final"] = "Blue";
       $_SESSION["myName"] = "NOTHING";
       ?>

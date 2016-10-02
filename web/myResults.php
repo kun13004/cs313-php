@@ -10,6 +10,7 @@
 	<body>
 		<?php 
 
+			$_SESSION["surveyComplete"] = true;
 			$_SESSION["myName"] = $_POST["name"];
 			$importance = $_POST["importance"];
 			$personality = $_POST["personality"];
