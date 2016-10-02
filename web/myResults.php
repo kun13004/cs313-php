@@ -84,8 +84,6 @@
 			$myFile = fopen($newFile, "a+") or die("Unable to open file!");
 			fwrite($myFile, $_SESSION["myName"]);
 			fwrite($myFile, $_SESSION["final"]);
-
-			echo fgets($myFile);
 			fclose($myFile);
 
 			$_SESSION["surveyComplete"] = true;
