@@ -1,12 +1,10 @@
 <?php
-  if (session_id() == '') {
-    echo "Does not yet exist";
-    session_start();
-  }
-  else {
-    echo "Already exists";
+  if ($_SESSION["surveyComplete"] == true) {
     header("Location: myResults.php");
     exit;
+  }
+  else {
+    session_start();
   }
 ?>
 <!DOCTYPE html>
