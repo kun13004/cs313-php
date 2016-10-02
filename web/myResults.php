@@ -10,12 +10,14 @@
 	<body>
 		<?php 
 
-			$_SESSION["surveyComplete"] = true;
-			$_SESSION["myName"] = $_POST["name"];
-			$_SESSION["importance"] = $_POST["importance"];
-			$_SESSION["personality"] = $_POST["personality"];
-			$_SESSION["roleModel"] = $_POST["roleModel"];
-			$_SESSION["class"] = $_POST["class"];
+			if ($_SESSION["surveyComplete"] == true) {
+				$_SESSION["myName"] = $_POST["name"];
+				$_SESSION["importance"] = $_POST["importance"];
+				$_SESSION["personality"] = $_POST["personality"];
+				$_SESSION["roleModel"] = $_POST["roleModel"];
+				$_SESSION["class"] = $_POST["class"];
+			}
+			
 
 			$blue = 0.4;
 			$green = 0.3;
@@ -85,6 +87,8 @@
 
 			echo fgets($myFile);
 			fclose($myFile);
+
+			$_SESSION["surveyComplete"] = true;
 		?>
 	</body>
 </html>

@@ -50,6 +50,7 @@
       <?php 
       $_SESSION["final"] = "Blue";
       $_SESSION["myName"] = "NOTHING";
+      $_SESSION["surveyComplete"] = false;
       ?>
 
     </form>
