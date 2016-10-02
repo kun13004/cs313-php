@@ -71,10 +71,10 @@
 				}
 			}
 
-			getResult($importance);
-			getResult($personality);
-			getResult($roleModel);
-			getResult($class);
+			getResult($_SESSION["importance"]);
+			getResult($_SESSION["personality"]);
+			getResult($_SESSION["roleModel"]);
+			getResult($_SESSION["class"]);
 
 			finalResult();
 
