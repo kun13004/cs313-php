@@ -48,9 +48,6 @@
 					return;
 				}
 
-				$newFile = getcwd(void) . "mySurvey.txt";
-				$myFile = fopen($newFile, "a+") or die("Unable to open file!");
-
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
 					echo "<h1>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h1><br>";
@@ -71,12 +68,6 @@
 					echo "<h1>" . $_SESSION["myName"] . ", your Lightsaber color is " . $_SESSION["final"] . "</h1><br>";
 					echo '<img src="http://i.imgur.com/VNs2L1Y.png" alt="purple lightsaber" />';
 				}
-
-				fwrite($myFile, $_SESSION["myName"]);
-				fwrite($myFile, $_SESSION["final"]);
-
-				echo fgets($myFile);
-				fclose($myFile);
 			}
 
 			getResult($importance);
@@ -85,6 +76,14 @@
 			getResult($class);
 
 			finalResult();
+
+			$newFile = getcwd(void) . "mySurvey.txt";
+			$myFile = fopen($newFile, "a+") or die("Unable to open file!");
+			fwrite($myFile, $_SESSION["myName"]);
+			fwrite($myFile, $_SESSION["final"]);
+
+			echo fgets($myFile);
+			fclose($myFile);
 		?>
 	</body>
 </html>
