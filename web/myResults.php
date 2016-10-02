@@ -10,7 +10,7 @@
 	<body>
 		<?php 
 
-			if ($_SESSION["surveyComplete"] == true) {
+			if ($_SESSION["surveyComplete"] == false) {
 				$_SESSION["myName"] = $_POST["name"];
 				$_SESSION["importance"] = $_POST["importance"];
 				$_SESSION["personality"] = $_POST["personality"];
