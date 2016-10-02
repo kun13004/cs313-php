@@ -1,10 +1,9 @@
 <?php
+  session_start();
+
   if ($_SESSION["surveyComplete"] == true) {
     header("Location: myResults.php");
     exit;
-  }
-  else {
-    session_start();
   }
 ?>
 <!DOCTYPE html>
