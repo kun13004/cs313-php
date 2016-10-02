@@ -48,7 +48,8 @@
 					return;
 				}
 
-				$myFile = fopen("https://blooming-beach-83437.herokuapp.com/mySurvey.txt", "a+") or die("Unable to open file!");
+				$newFile = getcwd(void) . "mySurvey.txt";
+				$myFile = fopen($newFile, "a+") or die("Unable to open file!");
 
 				if ($blue > $green && $blue > $orange && $blue > $purple) {
 					$_SESSION["final"] = "Blue";
