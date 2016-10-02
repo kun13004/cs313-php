@@ -12,10 +12,10 @@
 
 			$_SESSION["surveyComplete"] = true;
 			$_SESSION["myName"] = $_POST["name"];
-			$importance = $_POST["importance"];
-			$personality = $_POST["personality"];
-			$roleModel = $_POST["roleModel"];
-			$class = $_POST["class"];
+			$_SESSION["importance"] = $_POST["importance"];
+			$_SESSION["personality"] = $_POST["personality"];
+			$_SESSION["roleModel"] = $_POST["roleModel"];
+			$_SESSION["class"] = $_POST["class"];
 
 			$blue = 0.4;
 			$green = 0.3;
